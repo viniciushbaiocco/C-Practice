@@ -1,0 +1,7 @@
+*.o
+.vscode/
+
+# executaveis gerados pelo gcc
+aula*
+lista*
+!*.c
