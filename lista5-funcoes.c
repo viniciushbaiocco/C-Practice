@@ -146,3 +146,89 @@ int validarSenha(char senha[100]){
 //     }
 //     return 0;
 // }
+
+// exercicio 6
+float calcularValor(float precohora, int horas){
+    float total = precohora*horas;
+    return total;
+}
+
+// int main(){
+//     float precohora;
+//     int horas;
+//     scanf("%f %d", &precohora, &horas);
+//     float valor = calcularValor(precohora, horas);
+//     printf("valor: %.2f", valor);
+// }
+
+// exercicio 7
+
+int contarMaioresQue(float v[5], float limite) {
+    int cont = 0;
+    for (int i = 0; i < 5; i++) {
+        if (v[i]>limite){
+            cont++;
+        }
+    }
+    return cont;
+}
+
+// int main(){
+//     float v[5] = {3.5, 8.0, 2.0, 9.5, 5.0};
+//     float limite = 5.0;
+//     int total = contarMaioresQue(v, limite);
+//     printf("maiores que o limite: %d", total);
+// }
+
+// exercicio 8
+
+float taxaentrega(int codigo){
+    int soma;
+    if (codigo == 1) {
+        return soma = 8;
+    }
+    if (codigo == 2){
+        return soma = 15;
+    }
+    if (codigo == 3){
+        return soma = 25;
+    }
+    else {
+        return -1;
+    }
+}
+
+// int main(){
+//     int codigo;
+//     float preco = 5000.0;
+//     scanf("%d", &codigo);
+//     int taxa = taxaentrega(codigo);
+//     if (taxa == -1){
+//         printf("codigo invalido");
+//         return 0;}
+//     preco += taxa;
+//     printf("preco final: %.2f", preco);
+// }
+
+// exercicio 9
+
+int somaAmostra(int pop[4][3], int linha){
+    int soma = 0;
+    for (int i = 0; i < 3; i++){
+        soma+=pop[linha][i];
+    }
+    return soma;
+}
+
+// int main(){
+//     int linha = 2;
+//     int pop[4][3];
+//     for (int i=0;i<4;i++){
+//         for (int j=0; j<3;j++){
+//             scanf("%d", &pop[i][j]);
+//         }
+//     }
+//     int soma = somaAmostra(pop, linha);
+//     printf("soma: %d", soma);
+// }
+
